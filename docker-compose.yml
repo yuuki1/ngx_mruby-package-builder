@@ -11,3 +11,10 @@ ubuntu14.04:
   command: cp -a /usr/local/src/nginx_1.9.4-1~trusty_amd64.deb /tmp/nginx-ngx_mruby_1.9.4-1~trusty_amd64.deb
   volumes:
     - .:/tmp:rw
+
+ubuntu15.04:
+  dockerfile: Dockerfile.ubuntu15
+  build: .
+  command: cp -a /usr/local/src/nginx_1.9.6-1~vivid_amd64.deb /tmp/nginx-ngx_mruby_1.9.6-1~vivid_amd64.deb
+  volumes:
+    - .:/tmp:rw
